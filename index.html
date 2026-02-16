@@ -225,7 +225,9 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1;
+            min-width: 1200px;
+            object-position: center;
+            filter: brightness(0.7) contrast(1.1);
         }
 
         .hero-content {
@@ -1758,6 +1760,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <img class="hero-bg" src="download.jfif" alt="Rwanda Landscape">
+        <div class="hero-overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7));z-index:0;"></div>
         <div class="hero-content">
             <h2 data-translate="hero.title">IKAZE MU KARERE KA NGOMA</h2>
             <p data-translate="hero.subtitle">Murakaza neza kuri website y'Akarere ka Ngoma. Tura mwatanga serivisi zose zifashishwa mu mucyo w'ubucuruzi n'iterambere ry'akarere.</p>
@@ -1899,7 +1902,7 @@
                     <div class="leadership-grid">
                         <div class="leader-card">
                             <div class="leader-image">
-                                <img src="./animation.jfif" alt="District Mayor">
+                                <img src="./meya.jfif" alt="District Mayor">
                             </div>
                             <div class="leader-info">
                                 <h4 data-translate="leader.mayor.name">Umuyobozi w'Akarere</h4>
@@ -1908,7 +1911,7 @@
                         </div>
                         <div class="leader-card">
                             <div class="leader-image">
-                                <img src="./download.jfif" alt="Vice Mayor">
+                                <img src="./vice mayor.jfif" alt="Vice Mayor">
                             </div>
                             <div class="leader-info">
                                 <h4 data-translate="leader.vice1.name">Umuyobozi w'Umurenge</h4>
@@ -1917,7 +1920,7 @@
                         </div>
                         <div class="leader-card">
                             <div class="leader-image">
-                                <img src="./meya.jfif" alt="Administrator">
+                                <img src="./adimin.jfif" alt="Administrator">
                             </div>
                             <div class="leader-info">
                                 <h4 data-translate="leader.vice2.name">Umuyobozi w'Ibiro</h4>
@@ -2054,49 +2057,55 @@
                     <div class="document-icon"><i class="fas fa-id-card"></i></div>
                     <h4 data-translate="doc.id">Indangamuntu</h4>
                     <p data-translate="doc.id.desc">Indangamuntu y'igihugu</p>
-                    <a href="#" class="download-btn"><i class="fas fa-download"></i> <span data-translate="download">Download</span></a>
+                    <a href="#" class="download-btn"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
                 </div>
                 <div class="document-card">
                     <div class="document-icon"><i class="fas fa-birthday-cake"></i></div>
                     <h4 data-translate="doc.birth">Impushya</h4>
                     <p data-translate="doc.birth.desc">Impushya y'ivuka</p>
-                    <a href="#" class="download-btn"><i class="fas fa-download"></i> <span data-translate="download">Download</span></a>
+                    <a href="#" class="download-btn"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
                 </div>
                 <div class="document-card">
                     <div class="document-icon"><i class="fas fa-file-contract"></i></div>
                     <h4 data-translate="doc.marriage">Ubukwe</h4>
                     <p data-translate="doc.marriage.desc">Ibyatunganiwe ku bukwe</p>
-                    <a href="#" class="download-btn"><i class="fas fa-download"></i> <span data-translate="download">Download</span></a>
+                    <a href="#" class="download-btn"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
                 </div>
                 <div class="document-card">
                     <div class="document-icon"><i class="fas fa-home"></i></div>
                     <h4 data-translate="doc.land">Ubutaka</h4>
                     <p data-translate="doc.land.desc">Ibyangombwa by'ubutaka</p>
-                    <a href="#" class="download-btn"><i class="fas fa-download"></i> <span data-translate="download">Download</span></a>
+                    <a href="#" class="download-btn"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
                 </div>
                 <div class="document-card">
                     <div class="document-icon"><i class="fas fa-certificate"></i></div>
                     <h4 data-translate="doc.business">Inkunga</h4>
                     <p data-translate="doc.business.desc">Ibyangombwa by'inkunga</p>
-                    <a href="#" class="download-btn"><i class="fas fa-download"></i> <span data-translate="download">Download</span></a>
+                    <a href="#" class="download-btn"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
                 </div>
                 <div class="document-card">
                     <div class="document-icon"><i class="fas fa-car"></i></div>
                     <h4 data-translate="doc.transport">Mgendwa</h4>
                     <p data-translate="doc.transport.desc">Ibyangombwa by'igendoro</p>
-                    <a href="#" class="download-btn"><i class="fas fa-download"></i> <span data-translate="download">Download</span></a>
+                    <a href="#" class="download-btn"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
                 </div>
                 <div class="document-card">
                     <div class="document-icon"><i class="fas fa-school"></i></div>
                     <h4 data-translate="doc.school">Imp registration</h4>
                     <p data-translate="doc.school.desc">Imp registration y'umwana</p>
-                    <a href="#" class="download-btn"><i class="fas fa-download"></i> <span data-translate="download">Download</span></a>
+                    <a href="#" class="download-btn"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
                 </div>
                 <div class="document-card">
                     <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
                     <h4 data-translate="doc.form">Ibyifashisho</h4>
                     <p data-translate="doc.form.desc">Ibyifashisho by'akarere</p>
-                    <a href="#" class="download-btn"><i class="fas fa-download"></i> <span data-translate="download">Download</span></a>
+                    <a href="#" class="download-btn"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
+                </div>
+                <div class="document-card">
+                    <div class="document-icon"><i class="fas fa-passport"></i></div>
+                    <h4 data-translate="doc.citizenship">Ubwenegihugu</h4>
+                    <p data-translate="doc.citizenship.desc">Ubwenegihugu bw'u Rwanda</p>
+                    <a href="#citizenshipModal" class="download-btn" onclick="openCitizenshipModal()"><i class="fas fa-eye"></i> <span data-translate="view">Reba</span></a>
                 </div>
             </div>
         </div>
@@ -2391,7 +2400,7 @@
                 hero: { title: "B Murikano mu Karere ka Ngoma", subtitle: "Murakaza neza kuri website y'Akarere ka Ngoma. Tura mwatanga serivisi zose zifashishwa mu mucyo w'ubucuruzi n'iterambere ry'akarere.", btn1: "Reba byinshi", btn2: "Twandikire" },
                 nav: { home: "Ahabanza", about: "Ibyo kuri Ari", services: "Ibiro", tourism: "Ubukerarugendo", documents: "Ibigerondwa", news: "Amakuru", gallery: "Ishusho", contact: "Twandikire" },
                 stats: { sectors: "Imirenge", cells: "Utugari", population: "Abaturage", area: "Km²" },
-                about: { title: "Ibyo kuri Akarere", subtitle: "Rubuga rw'akarere ka Ngoma rwashyiriwe abaturage bose bo mu karere", heading: "Karere ka Ngoma", desc1: "Akarere ka Ngoma ni kamwe mu majyepfo y'u Rwanda, kagaragaramo ikirenge cya Buganza cya Rutsiro. Karere ni kirazwi cyane kubera ubucuti bw'ibihugu bike n'imitako.", desc2: "Ikagaba gikuru cyifashishwa mu gutwara abantu n'ibicuruzwa bikurikiranwa mu gihugu no mu mahanga. Akarere kagizwe n'imitenge 14.", desc3: "Akarere ka Ngoma ubukungu bushishikajwe cyane mu mirire y'ibikoni, ubucuruzi, n'ubuhinzi.", btn: "Reba byinshi" },
+                about: { title: "Ibyo kuri Akarere", subtitle: "Rubuga rw'akarere ka Ngoma rwashyiriwe abaturage bose bo mu karere", heading: "Karere ka Ngoma", desc1: "Akarere ka Ngoma ni kamwe mu majyopfo y'u Rwanda, kagaragaramo ikirenge cya Buganza cya Rutsiro. Ni akarere kazwi cyane kubera uburenganzira bw'ibihugu bitegane n'imitako y'Ishyaka rishushanyije munsi y'izuba.", desc2: "Ikagaba gikuru cyifashishwa mu gutwara abantu n'ibicuruzwa bikurikiranwa mu gihugu no mu mahanga. Akarere kagizwe n'imitenge 14.", desc3: "Akarere ka Ngoma ubukungu bushishikajwe cyane mu mirire y'ibikoni, ubucuruzi, n'ubuhinzi.", btn: "Reba byinshi" },
                 tab: { overview: "Ibyifuzo", history: "Amateka", leadership: "Abaporofeseri", stats: "Imibare" },
                 history: { "2000": { title: "Kurungika Akarere", desc: "Akarere ka Ngoma gashyiriweho mu 2000" }, "2005": { title: "Iterambere", desc: "Iterambere ry'ingenzi ribaye" }, "2010": { title: "Ubuhinzi", desc: "Gutezimbere ubuhinzi bushya" }, "2020": { title: "Ubuzima", desc: "Gutezimbere ubuzima n'uburezi" } },
                 leader: { mayor: { name: "Umuyobozi w'Akarere", title: "Mayor" }, vice1: { name: "Umuyobozi w'Umurenge", title: "Vice Mayor" }, vice2: { name: "Umuyobozi w'Ibiro", title: "Administrator" } },
@@ -2423,9 +2432,11 @@
                     business: { name: "Inkunga", desc: "Ibyangombwa by'inkunga" }, 
                     transport: { name: "Mgendwa", desc: "Ibyangombwa by'igendoro" }, 
                     school: { name: "Imp registration", desc: "Imp registration y'umwana" }, 
-                    form: { name: "Ibyifashisho", desc: "Ibyifashisho by'akarere" } 
+                    form: { name: "Ibyifashisho", desc: "Ibyifashisho by'akarere" },
+                    citizenship: { name: "Ubwenegihugu", desc: "Ubwenegihugu bw'u Rwanda" }
                 },
                 download: "Download",
+                view: "Reba",
                 news: { title: "Amakuru n'Ibyatanzwe", subtitle: "Amakuru mashya yose avuye mu karere ka Ngoma", category1: "Umuganura", category2: "Inama", category3: "Ubuzima", heading1: "Umuganura wa 2026 waratangiye", desc1: "Umuganura wa 2026 waratangiye mu buryo bw'ikirushya...", heading2: "Inama y'abaturage", desc2: "Inama y'abaturage izabera mu minsi mvuna...", heading3: "Ikiganiro kigezweho", desc3: "Ikiganiro kigezweho kigenewe abaturage..." },
                 readMore: "Reba byinshi",
                 gallery: { title: "Ishusho", subtitle: "Ishusho z'akarere ka Ngoma" },
@@ -2444,7 +2455,7 @@
                 hero: { title: "Welcome to Ngoma District", subtitle: "Welcome to the official website of Ngoma District. We provide all services needed for business development and district growth.", btn1: "Learn More", btn2: "Contact Us" },
                 nav: { home: "Home", about: "About", services: "Services", tourism: "Tourism", documents: "Documents", news: "News", gallery: "Gallery", contact: "Contact" },
                 stats: { sectors: "Sectors", cells: "Cells", population: "Population", area: "Km²" },
-                about: { title: "About District", subtitle: "The official website of Ngoma District dedicated to all citizens", heading: "Ngoma District", desc1: "Ngoma District is located in the Southern Province of Rwanda, part of the Buganza sector in Rutsiro.", desc2: "The district is known for its trade and transportation connecting to the Eastern Province and across borders.", desc3: "Ngoma District's economy is primarily based on agriculture, trade, and livestock.", btn: "Read More" },
+                about: { title: "About District", subtitle: "The official website of Ngoma District dedicated to all citizens", heading: "Ngoma District", desc1: "Ngoma District is located in the Eastern Province of Rwanda, along the country's eastern border with Tanzania. The district occupies a strategic position that supports trade, transportation, and cross-border economic activities. Ngoma's economy is mainly based on agriculture, livestock farming, and commerce, which provide livelihoods for the majority of its population. The area is characterized by gently rolling hills, fertile valleys, and a warm climate that favors agricultural production. Due to its natural features and favorable location, Ngoma District has growing potential for investment and development. With continued support from the Government of Rwanda and international partners, the district is steadily advancing toward sustainable economic growth and improved living standards for its residents.", desc2: "The district occupies a strategic position that supports trade, transportation, and cross-border economic activities connecting to other provinces and across borders.", desc3: "The region's natural beauty and strategic location make it a prime destination for tourists and investors alike. Through strong partnerships with the Republic of Rwanda and international organizations, Ngoma District continues to develop rapidly, bringing prosperity to its people and contributing to the nation's vision for sustainable growth and unity.", btn: "Read More" },
                 tab: { overview: "Overview", history: "History", leadership: "Leadership", stats: "Statistics" },
                 history: { "2000": { title: "District Formation", desc: "Ngoma District was established in 2000" }, "2005": { title: "Development", desc: "Major development initiatives began" }, "2010": { title: "Agriculture", desc: "Agricultural modernization started" }, "2020": { title: "Health & Education", desc: "Health and education improvements" } },
                 leader: { mayor: { name: "District Mayor", title: "Mayor" }, vice1: { name: "Vice Mayor", title: "Vice Mayor" }, vice2: { name: "Administrator", title: "Administrator" } },
@@ -2476,9 +2487,11 @@
                     business: { name: "Business License", desc: "Business registration" }, 
                     transport: { name: "Transport", desc: "Vehicle documents" }, 
                     school: { name: "School Registration", desc: "Child school registration" }, 
-                    form: { name: "Forms", desc: "District forms" } 
+                    form: { name: "Forms", desc: "District forms" },
+                    citizenship: { name: "Rwanda National ID", desc: "How to apply for Rwandan citizenship" }
                 },
                 download: "Download",
+                view: "View",
                 news: { title: "News & Announcements", subtitle: "Latest news from Ngoma District", category1: "Agriculture", category2: "Meeting", category3: "Health", heading1: "Harvest Season 2026 Begins", desc1: "The 2026 harvest season has begun in Ngoma District...", heading2: "Community Meeting", desc2: "Community meeting will be held this month...", heading3: "Health Program", desc3: "Health program for all citizens..." },
                 readMore: "Read More",
                 gallery: { title: "Gallery", subtitle: "Photos of Ngoma District" },
@@ -2497,7 +2510,7 @@
                 hero: { title: "Bienvenue dans le District de Ngoma", subtitle: "Bienvenue sur le site officiel du district de Ngoma. Nous fournissons tous les services nécessaires au développement des affaires et à la croissance du district.", btn1: "En savoir plus", btn2: "Contactez-nous" },
                 nav: { home: "Accueil", about: "À propos", services: "Services", tourism: "Tourisme", documents: "Documents", news: "Actualités", gallery: "Galerie", contact: "Contact" },
                 stats: { sectors: "Secteurs", cells: "Cellules", population: "Population", area: "Km²" },
-                about: { title: "À propos du district", subtitle: "Le site officiel du district de Ngoma dédié à tous les citoyens", heading: "District de Ngoma", desc1: "Le district de Ngoma est situé dans la province du Sud du Rwanda.", desc2: "Le district est connu pour son commerce et transport vers la province de l'Est.", desc3: "L'économie du district repose sur l'agriculture, le commerce et l'élevage.", btn: "En savoir plus" },
+                about: { title: "À propos du district", subtitle: "Le site officiel du district de Ngoma dédié à tous les citoyens", heading: "District de Ngoma", desc1: "Le district de Ngoma est situé dans la province de l'Est du Rwanda, faisant partie du secteur Buganza à Rutsiro. Le district est réputé pour sa beauté naturelle à couper le souffle, où les paysages baignés de soleil créent des vues imprenables.", desc2: "Le district est connu pour son commerce et transport vers la province de l'Est.", desc3: "L'économie du district repose sur l'agriculture, le commerce et l'élevage.", btn: "En savoir plus" },
                 tab: { overview: "Aperçu", history: "Histoire", leadership: "Leadership", stats: "Statistiques" },
                 history: { "2000": { title: "Formation du district", desc: "Le district de Ngoma a été créé en 2000" }, "2005": { title: "Développement", desc: "Les initiatives de développement ont commencé" }, "2010": { title: "Agriculture", desc: "Modernisation de l'agriculture" }, "2020": { title: "Santé & Éducation", desc: "Améliorations de la santé et de l'éducation" } },
                 leader: { mayor: { name: "Maire du district", title: "Maire" }, vice1: { name: "Vice-maire", title: "Vice-maire" }, vice2: { name: "Administrateur", title: "Administrateur" } },
@@ -2529,9 +2542,11 @@
                     business: { name: "Licence", desc: "Enregistrement" }, 
                     transport: { name: "Transport", desc: "Documents véhicule" }, 
                     school: { name: "Inscription", desc: "Inscription scolaire" }, 
-                    form: { name: "Formulaires", desc: "Formulaires du district" } 
+                    form: { name: "Formulaires", desc: "Formulaires du district" },
+                    citizenship: { name: "Carte Nationale d'Identité", desc: "Comment obtenir la citoyenneté rwandaise" }
                 },
                 download: "Télécharger",
+                view: "Voir",
                 news: { title: "Actualités", subtitle: "Dernières nouvelles du district de Ngoma", category1: "Agriculture", category2: "Réunion", category3: "Santé", heading1: "Saison des récoltes 2026", desc1: "La saison des récoltes 2026 a commencé...", heading2: "Réunion communautaire", desc2: "Réunion communautaire ce mois...", heading3: "Programme de santé", desc3: "Programme de santé pour tous..." },
                 readMore: "Lire la suite",
                 gallery: { title: "Galerie", subtitle: "Photos du district de Ngoma" },
@@ -2809,6 +2824,47 @@
                 }
             });
         });
+    </script>
+    
+    <!-- Citizenship Modal -->
+    <div id="citizenshipModal" class="modal" style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.7);">
+        <div class="modal-content" style="background-color:#fefefe;margin:5% auto;padding:20px;border:1px solid #888;width:80%;max-width:900px;max-height:90vh;overflow-y:auto;border-radius:8px;">
+            <span onclick="closeCitizenshipModal()" style="color:#aaa;float:right;font-size:28px;font-weight:bold;cursor:pointer;">&times;</span>
+            <h2 style="color:var(--primary-color);margin-bottom:20px;">UBURYO BWO GUSABA UBWENEGIHUGU BW'U RWANDA</h2>
+            <div style="text-align:left;line-height:1.8;">
+                <p><strong>Ubwenegihugu bw'u Rwanda</strong> ni uburenganzira butuma umuntu amenya ko ari Umunyarwanda byemewe n'amategeko. Ubu burenganzira bumwemerera kugira indangamuntu y'u Rwanda, pasiporo y'igihugu, no kwitabira serivisi za Leta zose zigenwe ku baturage b'igihugu.</p>
+                <p>Ubwenegihugu bushobora kuboneka mu buryo butandukanye, bitewe n'impamvu umuntu asaba kuba Umunyarwanda:</p>
+                <h3 style="color:var(--primary-color);margin-top:20px;">I. UBWENEGIHUGU BUBONEKA KUBERA KUVUKA</h3>
+                <p><strong>Umuntu aba Umunyarwanda igihe:</strong></p>
+                <ul style="margin-left:20px;"><li>Avutse ku babyeyi bombi b'Abanyarwanda, cyangwa</li><li>Avutse kuri umwe mu babyeyi ari Umunyarwanda</li></ul>
+                <p><strong>Inyandiko zisabwa:</strong></p>
+                <ul style="margin-left:20px;"><li>Icyemezo cy'amavuko (Acte de naissance)</li><li>Kopi y'indangamuntu z'ababyeyi cyangwa icyemezo cy'ubwenegihugu bwabo</li><li>Icyemezo cy'aho utuye gitanzwe n'inzego z'ibanze</li><li>Amafoto 2 ya passport</li><li>Ifishi yo gusaba ubwenegihugu yuzuye</li></ul>
+                <h3 style="color:var(--primary-color);margin-top:20px;">II. UBWENEGIHUGU BUBONEKA KUBERA GUSHYINGIRWA</h3>
+                <p>Umunyamahanga washyingiranwe n'Umunyarwanda ashobora gusaba ubwenegihugu igihe amaze kubana n'uwo mwashyingiranywe igihe cyemewe n'amategeko.</p>
+                <p><strong>Inyandiko zisabwa:</strong></p>
+                <ul style="margin-left:20px;"><li>Icyemezo cy'ishyingirwa cyemewe n'amategeko</li><li>Kopi y'indangamuntu cyangwa pasiporo y'uwo mwashyingiranywe</li><li>Icyemezo cy'uko mubana mu buryo bwemewe (cohabitation certificate)</li><li>Icyemezo cy'imico myiza (Police clearance)</li><li>Amafoto 2 ya passport</li><li>Ifishi yo gusaba ubwenegihugu</li></ul>
+                <h3 style="color:var(--primary-color);margin-top:20px;">III. UBWENEGIHUGU BUBONEKA KUBERA GUTURA MU RWANDA IGIHE KIREKIRE (NATURALIZATION)</h3>
+                <p>Umunyamahanga umaze gutura mu Rwanda byemewe n'amategeko igihe kirekire (akenshi nibura imyaka 10) ashobora gusaba ubwenegihugu.</p>
+                <p><strong>Inyandiko zisabwa:</strong></p>
+                <ul style="margin-left:20px;"><li>Icyemezo kigaragaza igihe umaze utuye mu Rwanda</li><li>Kopi ya pasiporo n'impushya zo gutura (Residence permit)</li><li>Icyemezo cy'akazi, ubucuruzi cyangwa indi mirimo yemewe</li><li>Icyemezo cy'imisoro (Tax clearance)</li><li>Police clearance yo mu Rwanda n'iyo mu gihugu wavukiyemo</li><li>Amafoto 2 ya passport</li><li>Ifishi yo gusaba ubwenegihugu</li><li>Ibaruwa isobanura impamvu usaba kuba Umunyarwanda</li></ul>
+                <h3 style="color:var(--primary-color);margin-top:20px;">IV. UBWENEGIHUGU BUBONEKA KUBERA IMPAMVU ZIDASANZWE</h3>
+                <p>Hari abantu bahabwa ubwenegihugu kubera impamvu zidasanzwe zirimo:</p>
+                <ul style="margin-left:20px;"><li>Gutanga umusanzu ukomeye mu iterambere ry'u Rwanda</li><li>Impamvu z'ubumuntu cyangwa iz'igihugu</li></ul>
+                <p><strong>Inyandiko zisabwa:</strong></p>
+                <ul style="margin-left:20px;"><li>Ibaruwa isobanura impamvu zidasanzwe ushingiraho</li><li>Ibyemezo bigaragaza umusanzu wawe ku Rwanda</li><li>Icyemezo cy'imico myiza</li><li>Amafoto 2 ya passport</li><li>Ifishi yo gusaba ubwenegihugu</li></ul>
+                <h3 style="color:var(--primary-color);margin-top:20px;">V. AHO USHIKIRIZA DOSIYE</h3>
+                <p><strong>Dosiye yose ishyikirizwa ku:</strong></p>
+                <p>Directorate General of Immigration and Emigration (DGIE)</p>
+                <p>Ni ho dosiye isuzumirwa, hakarebwa niba inyandiko zuzuye kandi ziri mu buryo bwemewe n'amategeko, hanyuma hafatwe icyemezo cya nyuma cyo kwemeza cyangwa kwanga ubwenegihugu.</p>
+                <h3 style="color:var(--primary-color);margin-top:20px;">VI. ICYITONDERWA CY'INGENZI</h3>
+                <ul style="margin-left:20px;"><li>Inyandiko zose zigomba kuba ari umwimerere (originaux) cyangwa kopi zemejwe n'inzego zibifitiye ububasha</li><li>Inyandiko zo hanze y'u Rwanda zigomba kuba zahinduwe mu Kinyarwanda cyangwa mu Cyongereza, zemejwe n'inzego zibifitiye ububasha</li><li>Gutanga amakuru atari yo bishobora gutuma dosiye yangwa</li><li>Kuzuza neza ifishi yo gusaba ubwenegihugu ni ingenzi cyane</li></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    function openCitizenshipModal() { document.getElementById('citizenshipModal').style.display = 'block'; }
+    function closeCitizenshipModal() { document.getElementById('citizenshipModal').style.display = 'none'; }
     </script>
 </body>
 </html>
